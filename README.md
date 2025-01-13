@@ -8,9 +8,10 @@
 ### **Module: Programming for Data Analytics**
 ***
 
-#### **Project overview:**
+#### **Project:**
 
-#### **Background:**
+This project analyses the historical weather data obtained from  [Met Eireann](https://www.met.ie/climate/available-data/historical-data) for five locations across Ireland to get an overview of weather conditions,and their impact on renewable energy sources, particularly wind energy. 
+
 
 #### **Method overview:**
 
@@ -31,16 +32,23 @@ Data Processing and analysis:
 
 ***
 
+#### Summary Statistics: 
 
 ![alt text](img/summarystats.png)
 
 
+-   Malin Head has the highest average and maximum windspeed indicating it is the windiest location. 
+-   Belmullet and Malin Head have the highest variability in wind speeds, indicating more turbulent weather conditions.  
+-   Shannon Airport and Dublin Airport have more moderate windspeed, with Shannon Airport having the lowest windspeed variability. 
 
 
 ***
 
+
 #### **Data Visualisation:**
 ![alt text](img/mean_wind_speed.png)
+
+The barplot is used to summarise the dataset graphically. The barplot shows that Malin Head has the highest mean wind speed. 
 
 ![](img/mean_yearly_windspeed.png)
 
@@ -49,3 +57,7 @@ Data Processing and analysis:
 
 ![alt text](img/seasonal_variability_windspeed.png)
 
+![alt text](img/solarenergy.png)
+
+
+#### Discussion: 

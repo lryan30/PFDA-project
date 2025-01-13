@@ -10,19 +10,27 @@
 
 #### **Project:**
 
-This project analyses the historical weather data obtained from  [Met Eireann](https://www.met.ie/climate/available-data/historical-data) for five locations across Ireland to get an overview of weather conditions,and their impact on renewable energy sources, particularly wind energy. 
-
+This project analyses the historical weather data obtained from  [Met Eireann](https://www.met.ie/climate/available-data/historical-data) for five locations across Ireland to provide an overview of weather patterns, with a specific focus on windspeed.  
 
 #### **Method overview:**
 
-Data Processing and analysis:
+*Data Processing and analysis:*
 
--   Jupyter notebook: open source web application used for python coding in real time, text and visualisations. 
+-   Jupyter notebook: An open source web application used for python coding in real time, text and visualisations. 
 
--   Pandas: open-source python library built on top of NumPy used for data manipulation and analysis. 
-    -    The CSV datasets were loaded into a pandas dataFrame using pd.read_csv(). The data was cleaned using methods like dropna() to remove missing values.  groupby() and resample()splits data into groups and allowed aggregation of data using mean() etc.
-    -    For time-series analysis, the pandas datetime function was used to process dates and times. pd.to_datetime() used to convert string dates into datetime objects. 
-   - Data Visualisation: Matplotlib: python library used to create plots to display the data graphically. 
+-   Pandas: An open-source python library built on top of NumPy used for data manipulation and analysis. 
+    -    The CSV datasets were loaded into a pandas dataFrame using pd.read_csv(). 
+    -   Data cleaning was carried out using functions like dropna() to remove missing values. 
+    -   The  groupby() and resample() functions were used to group data by location or year etc splitting the data into groups allowing aggregation of data using mean() etc.
+    -    For time-series analysis, the pandas datetime function was used to process dates and times. pd.to_datetime() used to convert string dates into datetime objects.
+
+*Data Visualisation:*
+   -    Matplotlib: python library used to create plots to display the data graphically for trend analysis. 
+   -    Seaborn: A Python data visualization library based on matplotlib. 
+   
+*Machine Learning:*
+
+-   Scikitlearn: An open-source machine learning library
 
 
 #### Set-up: 
@@ -32,32 +40,11 @@ Data Processing and analysis:
 
 ***
 
-#### Summary Statistics: 
+### References:
 
-![alt text](img/summarystats.png)
-
-
--   Malin Head has the highest average and maximum windspeed indicating it is the windiest location. 
--   Belmullet and Malin Head have the highest variability in wind speeds, indicating more turbulent weather conditions.  
--   Shannon Airport and Dublin Airport have more moderate windspeed, with Shannon Airport having the lowest windspeed variability. 
-
-
-***
-
-
-#### **Data Visualisation:**
-![alt text](img/mean_wind_speed.png)
-
-The barplot is used to summarise the dataset graphically. The barplot shows that Malin Head has the highest mean wind speed. 
-
-![](img/mean_yearly_windspeed.png)
-
-![alt text](img/plot_windspeed.png)
-
-
-![alt text](img/seasonal_variability_windspeed.png)
-
-![alt text](img/solarenergy.png)
-
-
-#### Discussion: 
+-   https://pandas.pydata.org/docs/
+-   https://pandas.pydata.org/docs/user_guide/10min.html
+-   https://numpy.org/doc/stable/user/whatisnumpy.html
+-   https://matplotlib.org/stable/index.html
+-   https://seaborn.pydata.org/
+-   https://scikit-learn.org/stable/
